@@ -6,7 +6,8 @@ same_rank_card = Card(rank="a", suit="hearts")
 same_card = Card(rank="a", suit="clubs")
 
 assert lower_card < higher_card
-assert higher_card == same_rank_card
+assert higher_card.rank == same_rank_card.rank
+assert higher_card != same_rank_card  # Must match both rank and suit
 assert higher_card == same_card
 
 d = Deck()
