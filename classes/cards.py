@@ -32,7 +32,7 @@ class Suit:
 
     def __key(self):
         """Hash key"""
-        return (self.name)
+        return self.name
 
     def _block_cross_type_comaprisons(self, other):
         if not isinstance(other, Suit):
@@ -103,7 +103,7 @@ class Rank:
 
     def __key(self):
         """Hash key"""
-        return (self.value)
+        return self.value
 
     def _block_cross_type_comaprisons(self, other):
         if not isinstance(other, Rank):
